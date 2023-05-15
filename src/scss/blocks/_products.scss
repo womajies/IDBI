@@ -181,6 +181,11 @@
       text-align: center;
       transition: opacity $transition-duration ease-in-out,
         transform $transition-duration ease-in-out;
+      @media screen and (max-width: $mobileS__max) {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+      }
     }
 
     .products-item-swiper-pagination {
@@ -198,6 +203,11 @@
       transform: translateY(100%);
       transition: opacity $transition-duration ease-in-out 0.2s,
         transform $transition-duration ease-in-out 0.2s;
+      @media screen and (max-width: $mobileS__max) {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+      }
 
       .swiper-pagination-bullet {
         width: 100%;
@@ -233,6 +243,11 @@
       transition: color $transition-duration $transition-timing-function,
         background-color $transition-duration $transition-timing-function,
         transform $transition-duration $transition-timing-function;
+      @media screen and (max-width: $mobileS__max) {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+      }
 
       &:hover:not(.swiper-button-disabled) {
         background-color: $accent-color-two;
@@ -263,6 +278,11 @@
       transition: color $transition-duration $transition-timing-function,
         background-color $transition-duration $transition-timing-function,
         transform $transition-duration $transition-timing-function;
+      @media screen and (max-width: $mobileS__max) {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+      }
 
       &:hover:not(.swiper-button-disabled) {
         background-color: $accent-color-two;
