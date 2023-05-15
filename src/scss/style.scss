@@ -1,0 +1,14 @@
+@use "sass:math";
+
+// libs
+@import "../../node_modules/swiper/swiper-bundle";
+@import "libs/normalize";
+
+// base
+@import "base/layout";
+
+// blocks
+@import "blocks/header";
+@import "blocks/collections";
+@import "blocks/categories";
+@import "blocks/products";

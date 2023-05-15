@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <!-- <link rel="shortcut icon" href="@img/favicons/favicon.ico" type="image/x-icon"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>IDBI</title>
+</head>
+
+<body>
+  <div class="layout">
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link btn-hover">женщинам</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link btn-hover">мужчинам</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link btn-hover">аксессуары</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link btn-hover">новинки</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link btn-hover">коллекции</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="btn-hover" title="Поиск" aria-label="Поиск">
+          <svg width="21" height="20">
+            <use xlink:href="@img/sprites/sprite-noattr.svg#search"></use>
+          </svg>
+        </button>
+        <button class="btn-hover" title="Аккаунт" aria-label="Аккаунт">
+          <svg width="22" height="20">
+            <use xlink:href="@img/sprites/sprite-noattr.svg#person"></use>
+          </svg>
+        </button>
+        <button class="btn-hover relative" id="favorite" title="Избранное" aria-label="Избранное">
+          <svg width="22" height="19">
+            <use xlink:href="@img/sprites/sprite-noattr.svg#favorite"></use>
+          </svg>
+          <div class="header__actions-count">0</div>
+        </button>
+        <button class="btn-hover relative" id="basket" title="Корзина" aria-label="Корзина">
+          <svg width="22" height="22">
+            <use xlink:href="@img/sprites/sprite-noattr.svg#basket"></use>
+          </svg>
+          <div class="header__actions-count">0</div>
+        </button>
+      </div>
+    </header>
+    <button class="menu btn-hover">
+      <svg width="32" height="32">
+        <use xlink:href="@img/sprites/sprite-noattr.svg#burger"></use>
+      </svg>
+    </button>
+    <main class="main">
+      <section class="collections">
+        <h1 class="visually-hidden">Платья</h1>
+        <div class="collections-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="collections__image" src="@img/collections-bg-1.jpg" alt="Платья с принтами">
+              <div class="collections__content">
+                <div class="title">Новая коллекция 2022</div>
+                <h2 class="collections__title">Платья с принтами</h2>
+                <a class="collections__link" href="#">
+                  Смотреть
+                  <svg class="collections__link-icon ml-12" width="8" height="6">
+                    <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source data-srcset="@img/collections-bg-2.webp, @img/collections-bg-2@2x.webp 1.5x" type="image/webp">
+                <img class="collections__image" data-src="@img/collections-bg-2.png"
+                  data-srcset="@img/collections-bg-2@2x.png 1.5x" alt="Платья с принтами">
+              </picture>
+              <div class="collections__content">
+                <div class="title">Новая коллекция 2022</div>
+                <h2 class="collections__title">Платья с принтами</h2>
+                <a class="collections__link" href="#">
+                  Смотреть
+                  <svg class="collections__link-icon ml-12" width="8" height="6">
+                    <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="collections__navigation">
+            <button class="collections-swiper-button-prev uppercase">Предыдущий</button>
+            <button class="collections-swiper-button-next uppercase">Следующий</button>
+          </div>
+          <div class="collections-swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="categories">
+        <h2 class="visually-hidden">Категории</h2>
+        <div class="categories-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide categories__slide">
+              <a class="categories__link" href="#">
+                <span class="categories__name">Лето</span>
+                <div class="overflow-hidden">
+                  <picture>
+                    <source data-srcset="@img/categories-item-1.webp, @img/categories-item-1@2x.webp 1.5x"
+                      type="image/webp">
+                    <img class="categories__image" data-src="@img/categories-item-1.jpg"
+                      data-srcset="@img/categories-item-1@2x.jpg 1.5x" alt="Категория Лето">
+                  </picture>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide categories__slide">
+              <a class="categories__link" href="#">
+                <span class="categories__name">Путешествие</span>
+                <div class="overflow-hidden">
+                  <picture>
+                    <source data-srcset="@img/categories-item-2.webp, @img/categories-item-2@2x.webp 1.5x"
+                      type="image/webp">
+                    <img class="categories__image" data-src="@img/categories-item-2.jpg"
+                      data-srcset="@img/categories-item-2@2x.jpg 1.5x" alt="Категория Путешествие">
+                  </picture>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide categories__slide">
+              <a class="categories__link" href="#">
+                <span class="categories__name">коллекции</span>
+                <div class="overflow-hidden">
+                  <picture>
+                    <source data-srcset="@img/categories-item-3.webp, @img/categories-item-3@2x.webp 1.5x"
+                      type="image/webp">
+                    <img class="categories__image" data-src="@img/categories-item-3.jpg"
+                      data-srcset="@img/categories-item-3@2x.jpg 1.5x" alt="Категория Коллекции">
+                  </picture>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide categories__slide">
+              <a class="categories__link" href="#">
+                <span class="categories__name">новинки</span>
+                <div class="overflow-hidden">
+                  <picture>
+                    <source data-srcset="@img/categories-item-4.webp, @img/categories-item-4@2x.webp 1.5x"
+                      type="image/webp">
+                    <img class="categories__image" data-src="@img/categories-item-4.jpg"
+                      data-srcset="@img/categories-item-4@2x.jpg 1.5x" alt="Категория Новинки">
+                  </picture>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide categories__slide">
+              <a class="categories__link" href="#">
+                <span class="categories__name">скидки</span>
+                <div class="overflow-hidden">
+                  <picture>
+                    <source data-srcset="@img/categories-item-5.webp, @img/categories-item-5@2x.webp 1.5x"
+                      type="image/webp">
+                    <img class="categories__image" data-src="@img/categories-item-5.jpg"
+                      data-srcset="@img/categories-item-5@2x.jpg 1.5x" alt="Категория Скидки">
+                  </picture>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide categories__slide">
+              <a class="categories__link" href="#">
+                <span class="categories__name">лукбук</span>
+                <div class="overflow-hidden">
+                  <picture>
+                    <source data-srcset="@img/categories-item-6.webp, @img/categories-item-6@2x.webp 1.5x"
+                      type="image/webp">
+                    <img class="categories__image" data-src="@img/categories-item-6.jpg"
+                      data-srcset="@img/categories-item-6@2x.jpg 1.5x" alt="Категория Лукбук">
+                  </picture>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="wave"></div>
+        </div>
+      </section>
+      <section class="products">
+        <h2 class="products__title title text-center mx-auto">
+          откроЙте для себя новинки сезона
+        </h2>
+        <div class="products__container">
+          <a class="products__link" href="#">
+            Перейти в каталог
+            <svg class="products__link-icon ml-12" width="8" height="6">
+              <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-right"></use>
+            </svg>
+          </a>
+          <div class="products-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="products-item products-item--novelty" id="product1">
+                  <div class="products-item__cover">
+                    <div class="products-item-swiper relative">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-1.webp, @img/products-item-1@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-1.png"
+                                data-srcset="@img/products-item-1@2x.png 1.5x" alt="Платье-рубашка виск атлас">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-1.webp, @img/products-item-1@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-1.png"
+                                data-srcset="@img/products-item-1@2x.png 1.5x" alt="Платье-рубашка виск атлас">
+                            </picture>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="products-item-swiper-pagination"></div>
+
+                      <button class="products-item-swiper-button-prev uppercase btn-hover" aria-label="Стрелка назад">
+                        <svg width="16" height="12">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-left"></use>
+                        </svg>
+                      </button>
+                      <button class="products-item-swiper-button-next uppercase btn-hover" aria-label="Стрелка вперёд">
+                        <svg width="16" height="12">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <button class="products-item__favorite" aria-label="В избранное">
+                      <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.1891 0.423331C15.6891 -0.576669 12.9891 0.223331 11.2891 2.52333C9.48907 0.223331 6.88907 -0.576669 4.38907 0.523331C1.98907 1.52333 -0.310933 4.42333 0.689067 8.42333C1.38907 12.0233 4.18907 14.6233 6.48907 16.2233C8.88907 17.9233 10.9891 18.8233 11.1891 18.8233H11.3891C11.4891 18.8233 11.5891 18.8233 11.5891 18.7233C11.8891 18.6233 13.8891 17.7233 16.1891 16.1233C18.3891 14.5233 21.1891 11.9233 21.9891 8.22333C22.8891 4.32333 20.5891 1.42333 18.1891 0.423331Z" />
+                        <path
+                          d="M18.1891 0.423331C15.6891 -0.576669 12.9891 0.223331 11.2891 2.52333C9.48907 0.223331 6.88907 -0.576669 4.38907 0.523331C1.98907 1.52333 -0.310933 4.42333 0.689067 8.42333C1.38907 12.0233 4.18907 14.6233 6.48907 16.2233C8.88907 17.9233 10.9891 18.8233 11.1891 18.8233C11.1891 18.8233 11.2891 18.8233 11.3891 18.8233C11.4891 18.8233 11.5891 18.8233 11.5891 18.7233C11.8891 18.6233 13.8891 17.7233 16.1891 16.1233C18.3891 14.5233 21.1891 11.9233 21.9891 8.22333C22.8891 4.32333 20.5891 1.42333 18.1891 0.423331ZM17.6891 1.42333C19.7891 2.22333 21.5891 4.72333 20.7891 8.12333C19.4891 13.9233 12.1891 17.3233 11.1891 17.8233C9.98907 17.3233 2.88907 13.9233 1.58907 8.12333C0.889067 4.72333 2.68907 2.32333 4.78907 1.42333C5.38907 1.22333 5.88907 1.12333 6.48907 1.12333C8.48907 1.12333 9.98907 2.52333 10.7891 3.82333C10.8891 3.92333 11.0891 4.02333 11.1891 4.02333C11.3891 4.02333 11.4891 3.92333 11.5891 3.82333C12.7891 2.02333 14.9891 0.323331 17.6891 1.42333Z"
+                          fill="black" />
+                      </svg>
+                    </button>
+                    <div class="products-item__actions">
+                      <div class="products-item__sizes">
+                        <span class="products-item__sizes-item">xxs</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">xs</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">s</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">m</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">l</span>
+                        <span class="products-item__sizes-item">xl</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">xxl</span>
+                      </div>
+                      <button class="products-item__basket uppercase btn-hover">
+                        В корзину
+                        <svg width="22" height="22" class="ml-4">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#basket"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-item__tag">Новинка</div>
+                  <div class="products-item__descr">
+                    <div class="d-flex flex-col">
+                      <a href="#" class="products-item__name btn-hover">Платье-рубашка виск атлас</a>
+                      <span class="products-item__price mt-4">
+                        12&nbsp;700р.</span>
+                    </div>
+                    <div class="products-item__colors">
+                      <button class="products-item__colors-btn beige" aria-label="Светло-жёлтый цвет"
+                        style="background-color: beige;"></button>
+                      <button class="products-item__colors-btn burlywood" aria-label="Светло-коричневый цвет"
+                        style="background-color: burlywood;"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products-item" id="product2">
+                  <div class="products-item__cover">
+                    <div class="products-item-swiper relative">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-2.webp, @img/products-item-2@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-2.png"
+                                data-srcset="@img/products-item-2@2x.png 1.5x" alt="Юбка миди 2 полоска">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-2.webp, @img/products-item-2@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-2.png"
+                                data-srcset="@img/products-item-2@2x.png 1.5x" alt="Юбка миди 2 полоска">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-2.webp, @img/products-item-2@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-2.png"
+                                data-srcset="@img/products-item-2@2x.png 1.5x" alt="Юбка миди 2 полоска">
+                            </picture>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="products-item-swiper-pagination"></div>
+
+                      <button class="products-item-swiper-button-prev uppercase btn-hover" aria-label="Стрелка назад">
+                        <svg width="16" height="12">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-left"></use>
+                        </svg>
+                      </button>
+                      <button class="products-item-swiper-button-next uppercase btn-hover" aria-label="Стрелка вперёд">
+                        <svg width="16" height="12">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <button class="products-item__favorite" aria-label="В избранное">
+                      <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.1891 0.423331C15.6891 -0.576669 12.9891 0.223331 11.2891 2.52333C9.48907 0.223331 6.88907 -0.576669 4.38907 0.523331C1.98907 1.52333 -0.310933 4.42333 0.689067 8.42333C1.38907 12.0233 4.18907 14.6233 6.48907 16.2233C8.88907 17.9233 10.9891 18.8233 11.1891 18.8233H11.3891C11.4891 18.8233 11.5891 18.8233 11.5891 18.7233C11.8891 18.6233 13.8891 17.7233 16.1891 16.1233C18.3891 14.5233 21.1891 11.9233 21.9891 8.22333C22.8891 4.32333 20.5891 1.42333 18.1891 0.423331Z" />
+                        <path
+                          d="M18.1891 0.423331C15.6891 -0.576669 12.9891 0.223331 11.2891 2.52333C9.48907 0.223331 6.88907 -0.576669 4.38907 0.523331C1.98907 1.52333 -0.310933 4.42333 0.689067 8.42333C1.38907 12.0233 4.18907 14.6233 6.48907 16.2233C8.88907 17.9233 10.9891 18.8233 11.1891 18.8233C11.1891 18.8233 11.2891 18.8233 11.3891 18.8233C11.4891 18.8233 11.5891 18.8233 11.5891 18.7233C11.8891 18.6233 13.8891 17.7233 16.1891 16.1233C18.3891 14.5233 21.1891 11.9233 21.9891 8.22333C22.8891 4.32333 20.5891 1.42333 18.1891 0.423331ZM17.6891 1.42333C19.7891 2.22333 21.5891 4.72333 20.7891 8.12333C19.4891 13.9233 12.1891 17.3233 11.1891 17.8233C9.98907 17.3233 2.88907 13.9233 1.58907 8.12333C0.889067 4.72333 2.68907 2.32333 4.78907 1.42333C5.38907 1.22333 5.88907 1.12333 6.48907 1.12333C8.48907 1.12333 9.98907 2.52333 10.7891 3.82333C10.8891 3.92333 11.0891 4.02333 11.1891 4.02333C11.3891 4.02333 11.4891 3.92333 11.5891 3.82333C12.7891 2.02333 14.9891 0.323331 17.6891 1.42333Z"
+                          fill="black" />
+                      </svg>
+                    </button>
+                    <div class="products-item__actions">
+                      <div class="products-item__sizes">
+                        <span class="products-item__sizes-item">xxs</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">xs</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">s</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">m</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">l</span>
+                        <span class="products-item__sizes-item">xl</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">xxl</span>
+                      </div>
+                      <button class="products-item__basket uppercase btn-hover">
+                        В корзину
+                        <svg width="22" height="22" class="ml-4">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#basket"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-item__tag">Новинка</div>
+                  <div class="products-item__descr">
+                    <div class="d-flex flex-col">
+                      <a href="#" class="products-item__name btn-hover">Юбка миди 2 полоска</a>
+                      <span class="products-item__price mt-4">
+                        4&nbsp;400р.</span>
+                    </div>
+                    <div class="products-item__colors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products-item products-item--novelty" id="product3">
+                  <div class="products-item__cover">
+                    <div class="products-item-swiper relative">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-3.webp, @img/products-item-3@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-3.png"
+                                data-srcset="@img/products-item-3@2x.png 1.5x" alt="Платье-рубашка виск атлас">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-3.webp, @img/products-item-3@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-3.png"
+                                data-srcset="@img/products-item-3@2x.png 1.5x" alt="Платье-рубашка виск атлас">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-3.webp, @img/products-item-3@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-3.png"
+                                data-srcset="@img/products-item-3@2x.png 1.5x" alt="Платье-рубашка виск атлас">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-3.webp, @img/products-item-3@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-3.png"
+                                data-srcset="@img/products-item-3@2x.png 1.5x" alt="Платье-рубашка виск атлас">
+                            </picture>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="products-item-swiper-pagination"></div>
+
+                      <button class="products-item-swiper-button-prev uppercase btn-hover" aria-label="Стрелка назад">
+                        <svg width="16" height="12">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-left"></use>
+                        </svg>
+                      </button>
+                      <button class="products-item-swiper-button-next uppercase btn-hover" aria-label="Стрелка вперёд">
+                        <svg width="16" height="12">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <button class="products-item__favorite" aria-label="В избранное">
+                      <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.1891 0.423331C15.6891 -0.576669 12.9891 0.223331 11.2891 2.52333C9.48907 0.223331 6.88907 -0.576669 4.38907 0.523331C1.98907 1.52333 -0.310933 4.42333 0.689067 8.42333C1.38907 12.0233 4.18907 14.6233 6.48907 16.2233C8.88907 17.9233 10.9891 18.8233 11.1891 18.8233H11.3891C11.4891 18.8233 11.5891 18.8233 11.5891 18.7233C11.8891 18.6233 13.8891 17.7233 16.1891 16.1233C18.3891 14.5233 21.1891 11.9233 21.9891 8.22333C22.8891 4.32333 20.5891 1.42333 18.1891 0.423331Z" />
+                        <path
+                          d="M18.1891 0.423331C15.6891 -0.576669 12.9891 0.223331 11.2891 2.52333C9.48907 0.223331 6.88907 -0.576669 4.38907 0.523331C1.98907 1.52333 -0.310933 4.42333 0.689067 8.42333C1.38907 12.0233 4.18907 14.6233 6.48907 16.2233C8.88907 17.9233 10.9891 18.8233 11.1891 18.8233C11.1891 18.8233 11.2891 18.8233 11.3891 18.8233C11.4891 18.8233 11.5891 18.8233 11.5891 18.7233C11.8891 18.6233 13.8891 17.7233 16.1891 16.1233C18.3891 14.5233 21.1891 11.9233 21.9891 8.22333C22.8891 4.32333 20.5891 1.42333 18.1891 0.423331ZM17.6891 1.42333C19.7891 2.22333 21.5891 4.72333 20.7891 8.12333C19.4891 13.9233 12.1891 17.3233 11.1891 17.8233C9.98907 17.3233 2.88907 13.9233 1.58907 8.12333C0.889067 4.72333 2.68907 2.32333 4.78907 1.42333C5.38907 1.22333 5.88907 1.12333 6.48907 1.12333C8.48907 1.12333 9.98907 2.52333 10.7891 3.82333C10.8891 3.92333 11.0891 4.02333 11.1891 4.02333C11.3891 4.02333 11.4891 3.92333 11.5891 3.82333C12.7891 2.02333 14.9891 0.323331 17.6891 1.42333Z"
+                          fill="black" />
+                      </svg>
+                    </button>
+                    <div class="products-item__actions">
+                      <div class="products-item__sizes">
+                        <span class="products-item__sizes-item">xxs</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">xs</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">s</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">m</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">l</span>
+                        <span class="products-item__sizes-item">xl</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">xxl</span>
+                      </div>
+                      <button class="products-item__basket uppercase btn-hover">
+                        В корзину
+                        <svg width="22" height="22" class="ml-4">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#basket"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-item__tag">Новинка</div>
+                  <div class="products-item__descr">
+                    <div class="d-flex flex-col">
+                      <a href="#" class="products-item__name btn-hover">Платье-рубашка виск атлас</a>
+                      <span class="products-item__price mt-4">
+                        12&nbsp;700р.</span>
+                    </div>
+                    <div class="products-item__colors">
+                      <button class="products-item__colors-btn beige" aria-label="Светло-жёлтый цвет"
+                        style="background-color: beige;"></button>
+                      <button class="products-item__colors-btn burlywood" aria-label="Светло-коричневый цвет"
+                        style="background-color: burlywood;"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products-item products-item--novelty" id="product4">
+                  <div class="products-item__cover">
+                    <div class="products-item-swiper relative">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-4.webp, @img/products-item-4@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-4.png"
+                                data-srcset="@img/products-item-4@2x.png 1.5x" alt="Платье-рубашка с карманами миди">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" class="products-item__link">
+                            <picture>
+                              <source data-srcset="@img/products-item-4.webp, @img/products-item-4@2x.webp 1.5x"
+                                type="image/webp">
+                              <img class="products-item__image" data-src="@img/products-item-4.png"
+                                data-srcset="@img/products-item-4@2x.png 1.5x" alt="Платье-рубашка с карманами миди">
+                            </picture>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="products-item-swiper-pagination"></div>
+
+                      <button class="products-item-swiper-button-prev uppercase btn-hover" aria-label="Стрелка назад">
+                        <svg width="16" height="12">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-left"></use>
+                        </svg>
+                      </button>
+                      <button class="products-item-swiper-button-next uppercase btn-hover" aria-label="Стрелка вперёд">
+                        <svg width="16" height="12">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <button class="products-item__favorite" aria-label="В избранное">
+                      <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.1891 0.423331C15.6891 -0.576669 12.9891 0.223331 11.2891 2.52333C9.48907 0.223331 6.88907 -0.576669 4.38907 0.523331C1.98907 1.52333 -0.310933 4.42333 0.689067 8.42333C1.38907 12.0233 4.18907 14.6233 6.48907 16.2233C8.88907 17.9233 10.9891 18.8233 11.1891 18.8233H11.3891C11.4891 18.8233 11.5891 18.8233 11.5891 18.7233C11.8891 18.6233 13.8891 17.7233 16.1891 16.1233C18.3891 14.5233 21.1891 11.9233 21.9891 8.22333C22.8891 4.32333 20.5891 1.42333 18.1891 0.423331Z" />
+                        <path
+                          d="M18.1891 0.423331C15.6891 -0.576669 12.9891 0.223331 11.2891 2.52333C9.48907 0.223331 6.88907 -0.576669 4.38907 0.523331C1.98907 1.52333 -0.310933 4.42333 0.689067 8.42333C1.38907 12.0233 4.18907 14.6233 6.48907 16.2233C8.88907 17.9233 10.9891 18.8233 11.1891 18.8233C11.1891 18.8233 11.2891 18.8233 11.3891 18.8233C11.4891 18.8233 11.5891 18.8233 11.5891 18.7233C11.8891 18.6233 13.8891 17.7233 16.1891 16.1233C18.3891 14.5233 21.1891 11.9233 21.9891 8.22333C22.8891 4.32333 20.5891 1.42333 18.1891 0.423331ZM17.6891 1.42333C19.7891 2.22333 21.5891 4.72333 20.7891 8.12333C19.4891 13.9233 12.1891 17.3233 11.1891 17.8233C9.98907 17.3233 2.88907 13.9233 1.58907 8.12333C0.889067 4.72333 2.68907 2.32333 4.78907 1.42333C5.38907 1.22333 5.88907 1.12333 6.48907 1.12333C8.48907 1.12333 9.98907 2.52333 10.7891 3.82333C10.8891 3.92333 11.0891 4.02333 11.1891 4.02333C11.3891 4.02333 11.4891 3.92333 11.5891 3.82333C12.7891 2.02333 14.9891 0.323331 17.6891 1.42333Z"
+                          fill="black" />
+                      </svg>
+                    </button>
+                    <div class="products-item__actions">
+                      <div class="products-item__sizes">
+                        <span class="products-item__sizes-item">xxs</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">xs</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">s</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">m</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">l</span>
+                        <span class="products-item__sizes-item">xl</span>
+                        <span class="products-item__sizes-item products-item__sizes-item--active">xxl</span>
+                      </div>
+                      <button class="products-item__basket uppercase btn-hover">
+                        В корзину
+                        <svg width="22" height="22" class="ml-4">
+                          <use xlink:href="@img/sprites/sprite-noattr.svg#basket"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-item__tag">Новинка</div>
+                  <div class="products-item__descr">
+                    <div class="d-flex flex-col">
+                      <a href="#" class="products-item__name btn-hover">Платье-рубашка с карманами миди</a>
+                      <span class="products-item__price mt-4"><del class="products-item__price--old">12&nbsp;900р.</del>
+                        8&nbsp;900р.</span>
+                    </div>
+                    <div class="products-item__colors"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__navigation">
+            <button class="products-swiper-button-prev uppercase" aria-label="Стрелка назад">
+              <svg width="16" height="12">
+                <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button class="products-swiper-button-next uppercase" aria-label="Стрелка вперёд">
+              <svg width="16" height="12">
+                <use xlink:href="@img/sprites/sprite-noattr.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+  <script src='js/main.min.js' type='module'></script>
+</body>
+
+</html>
