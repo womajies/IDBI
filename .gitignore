@@ -21,6 +21,9 @@
 # Package files
 *.jar
 
+# Package files
+*.zip
+
 # JetBrains IDE
 .idea/
 
