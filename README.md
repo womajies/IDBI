@@ -2,7 +2,7 @@
 ## Web Developer
 ### Preview:
 [vipdeveloper.ru/IDBI](https://vipdeveloper.ru/IDBI)
-Или:
+
 [gh-pages](https://womajies.github.io/IDBI)
 
 **На борту сборки:**
