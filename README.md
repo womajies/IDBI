@@ -1,5 +1,8 @@
 # Shamil Magomedov
 ## Web Developer
+### Preview
+[![vipdeveloper.ru/IDBI](https://vipdeveloper.ru/IDBI)](https://github.com/womajies)
+[![gh-pages](https://womajies.github.io/IDBI/)](https://github.com/womajies)
 
 **На борту сборки:**
 * ES6 импорт плагинов
