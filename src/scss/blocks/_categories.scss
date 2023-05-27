@@ -58,10 +58,13 @@
       position: absolute;
       left: 0;
       background-image: url('@img/wave-bg.svg');
-      background-size: contain;
+      background-size: cover;
       background-position: left bottom;
       background-repeat: repeat-x;
       transform: rotateY(180deg);
+      @media screen and (max-width: $desktop__max) {
+        background-size: contain;
+      }
     }
     &::after {
       content: '';
@@ -70,9 +73,12 @@
       position: absolute;
       left: 49%;
       background-image: url('@img/wave-bg.svg');
-      background-size: contain;
+      background-size: cover;
       background-position: left bottom;
       background-repeat: repeat-x;
+      @media screen and (max-width: $desktop__max) {
+        background-size: contain;
+      }
     }
   }
 }
